@@ -1,0 +1,113 @@
+PIP(1)                                pip                               PIP(1)
+
+NNAAMMEE
+       pip - package manager for Python packages
+
+SSYYNNOOPPSSIISS
+       pip <command> [options]
+
+DDEESSCCRRIIPPTTIIOONN
+       pip is the PyPA recommended package manager for Python packages
+
+OOPPTTIIOONNSS
+       --hh,, ----hheellpp
+              Show help.
+
+       ----iissoollaatteedd
+              Run  pip in an isolated mode, ignoring environment variables and
+              user configuration.
+
+       --vv,, ----vveerrbboossee
+              Give more output. Option is additive, and can be used  up  to  3
+              times.
+
+       --VV,, ----vveerrssiioonn
+              Show version and exit.
+
+       --qq,, ----qquuiieett
+              Give  less  output.  Option is additive, and can be used up to 3
+              times (corresponding to WARNING,  ERROR,  and  CRITICAL  logging
+              levels).
+
+       ----lloogg <<ppaatthh>>
+              Path to a verbose appending log.
+
+       ----pprrooxxyy <<pprrooxxyy>>
+              Specify a proxy in the form [user:passwd@]proxy.server:port.
+
+       ----rreettrriieess <<rreettrriieess>>
+              Maximum  number  of  retries each connection should attempt (de-
+              fault 5 times).
+
+       ----ttiimmeeoouutt <<sseecc>>
+              Set the socket timeout (default 15 seconds).
+
+       ----eexxiissttss--aaccttiioonn <<aaccttiioonn>>
+              Default action when a path already exists:  (s)witch,  (i)gnore,
+              (w)ipe, (b)ackup, (a)bort).
+
+       ----ttrruusstteedd--hhoosstt <<hhoossttnnaammee>>
+              Mark this host as trusted, even though it does not have valid or
+              any HTTPS.
+
+       ----cceerrtt <<ppaatthh>>
+              Path to alternate CA bundle.
+
+       ----cclliieenntt--cceerrtt <<ppaatthh>>
+              Path to SSL client certificate, a  single  file  containing  the
+              private key and the certificate in PEM format.
+
+       ----ccaacchhee--ddiirr <<ddiirr>>
+              Store the cache data in <dir>.
+
+       ----nnoo--ccaacchhee--ddiirr
+              Disable the cache.
+
+       ----ddiissaabbllee--ppiipp--vveerrssiioonn--cchheecckk
+              Don't periodically check PyPI to determine whether a new version
+              of pip is available for download. Implied with --no-index.
+
+       ----nnoo--ccoolloorr
+              Suppress colored output
+
+CCOOMMMMAANNDDSS
+       ppiipp--iinnssttaallll((11))
+              Install packages.
+
+       ppiipp--ddoowwnnllooaadd((11))
+              Download packages.
+
+       ppiipp--uunniinnssttaallll((11))
+              Uninstall packages.
+
+       ppiipp--ffrreeeezzee((11))
+              Output installed packages in requirements format.
+
+       ppiipp--lliisstt((11))
+              List installed packages.
+
+       ppiipp--sshhooww((11))
+              Show information about installed packages.
+
+       ppiipp--cchheecckk((11))
+              Verify installed packages have compatible dependencies.
+
+       ppiipp--sseeaarrcchh((11))
+              Search PyPI for packages.
+
+       ppiipp--wwhheeeell((11))
+              Build wheels from your requirements.
+
+       ppiipp--hhaasshh((11))
+              Compute hashes of package archives.
+
+       ppiipp--hheellpp((11))
+              Show help for pip commands.
+
+AAUUTTHHOORR
+       pip developers
+
+CCOOPPYYRRIIGGHHTT
+       2008-2019, PyPA
+
+19.0                            March 29, 2019                          PIP(1)
