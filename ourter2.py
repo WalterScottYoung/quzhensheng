@@ -52,10 +52,6 @@ cv2.imshow('imagshow', img)    #显示原始图片
 
 cv2.namedWindow("dst", 2)   #创建一个窗口
 cv2.imshow("dst", dst)  #显示灰度图
-
-
 #plt.hist(gray.ravel(), 256, [0, 256]) #计算灰度直方图
 #plt.show()
-
-
 cv2.waitKey()
