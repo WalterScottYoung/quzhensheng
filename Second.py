@@ -11,7 +11,10 @@ img = (255-img)
 
 # change lights
 kernel = cv2.getStructuringElement(cv2.MORPH_RECT,(25, 25))
+nextkernel = cv2.getStructuringElement(cv2.MORPH_RECT,(1, 1))
 img = cv2.morphologyEx(img, cv2.MORPH_TOPHAT, kernel)
+
+img=cv2.dilate(img,nextkernel,iterations=5)
 
 # OTSU
 res, dst = cv2.threshold(img,0, 255,cv2.THRESH_OTSU)
@@ -28,6 +31,7 @@ for cont in contours:
         ares = currentares
         maxcont = cont
 
+# draw the object
 rect = cv2.minAreaRect(maxcont)
 box = cv2.boxPoints(rect)
 box = np.int0(box)
